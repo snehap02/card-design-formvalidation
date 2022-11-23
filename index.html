@@ -4,83 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0"/>
     <link rel="icon" type="image/x-icon" href="/images/form.png">
     <link rel="stylesheet" href="/style.css">
     <title>Form Validation</title>
 </head>
 <body class="min-h-screen flex justify-center items-center">
-    <div class="whole border border-black" id="whole-container">
+    <div class="whole border border-blue-600 border-t-8 py-2 px-8 rounded-xl border-b-2" id="whole-container">
 
-        <h2 class="heading text-center" id="heading1">
+        <h2 class="heading text-center font-firstFont text-base font-medium uppercase" id="heading1">
             Register Here
         </h2>
 
-        <form action="">
-            <div class="namesection" id="name-section">
+        <form action="" class="form pt-2 font-secondFont text-sm" id="form">
+            <div class="namesection p-1" id="name-section">
                 <label for="name" class="block">Full Name</label>
-                <div class="relative">
+                <div class="relative border p-2 rounded-md ring-1 bg-blue-50">
                     <div class="absolute">
-                        <span class="material-symbols-outlined pl-2">
+                        <span class="material-symbols-outlined text-blue-400">
                             person
                         </span>
                     </div>
-                    <input type="text" id="name" class="pl-10 w-full" placeholder="Jim Carrey">
+                    <input type="text" id="name" class="pl-10 w-full outline-none text-secondFont text-xs px-20 bg-blue-50 valid:border-green-600 invalid:border-red-600" placeholder="Jim Carrey" required>
                 </div>
             </div>
 
-            <div class="phonesection" id="phone-section">
+            <div class="phonesection p-1" id="phone-section">
                 <label for="phone" class="block">Phone Number</label>
-                <div class="relative">
+                <div class="relative border p-2 rounded-md ring-1 bg-blue-50">
                     <div class="absolute">
-                        <span class="material-symbols-outlined pl-2">
+                        <span class="material-symbols-outlined text-blue-400">
                             call
                         </span>
                     </div>
-                    <input type="text" id="phone" class="w-full pl-10" placeholder="xxxxxxxxxx">
+                    <input type="text" id="phone" class="w-full pl-10 outline-none text-secondFont text-xs px-20 bg-blue-50" placeholder="xxxxxxxxxx" required>
                 </div>
             </div>
 
-            <div class="emailsection" id="email-section">
+            <div class="emailsection p-1" id="email-section">
                 <label for="email" class="block">Email</label>
-                <div class="relative">
+                <div class="relative border p-2 rounded-md ring-1 bg-blue-50">
                     <div class="absolute">
-                        <span class="material-symbols-outlined pl-2">
+                        <span class="material-symbols-outlined text-blue-400">
                             contact_mail
                         </span>
                     </div>
-                    <input type="text" id="email" class="w-full pl-10" placeholder="xyz@gmail.com">
+                    <input type="text" id="email" class="w-full pl-10 outline-none text-secondFont text-xs bg-blue-50" placeholder="xyz@gmail.com" required>
                 </div>
             </div>
 
-            <div class="pass1" id="pass1">
+            <div class="pass1 p-1" id="pass1">
                 <label for="pass1" class="block">Password</label>
-                <div class="relative">
+                <div class="relative border p-2 rounded-md ring-1 bg-blue-50">
                     <div class="absolute">
-                        <span class="material-symbols-outlined pl-2">
+                        <span class="material-symbols-outlined text-blue-400">
                             password
                         </span>
                     </div>
-                    <input type="text" id="pass1" class="w-full pl-10" placeholder="*********">
+                    <input type="text" id="pass1" class="w-full pl-10 outline-none text-secondFont text-xs px-20 bg-blue-50" placeholder="*********" required>
                 </div>
             </div>
 
-            <div class="pass2" id="pass2">
+            <div class="pass2 p-1" id="pass2">
                 <label for="pass2" class="block">Confirm Password</label>
-                <div class="relative">
+                <div class="relative border p-2 rounded-md ring-1 bg-blue-50">
                     <div class="absolute">
-                        <span class="material-symbols-outlined pl-2">
+                        <span class="material-symbols-outlined text-blue-400">
                             password
                         </span>
                     </div>
-                    <input type="text" id="pass2" class="w-full pl-10" placeholder="*********">
+                    <input type="text" id="pass2" class="w-full pl-10 outline-none text-secondFont text-xs px-20 bg-blue-50" placeholder="*********" required>
                 </div>
+            </div>
+
+            <div class="text-center mt-2 bg-blue-600 rounded-lg font-lastFont font-bold py-2 mb-3">
+                <button type="submit" class="uppercase text-white">Register</button>
             </div>
         </form>
-
-        <div class="text-center">
-            <button type="submit">Register</button>
-        </div>
 
     </div>
 
