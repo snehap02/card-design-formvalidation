@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,1,0" />
     <link rel="icon" type="image/x-icon" href="/images/form.png">
     <link rel="stylesheet" href="/style.css">
     <title>Form Validation</title>
@@ -18,27 +19,62 @@
         <form action="">
             <div class="namesection" id="name-section">
                 <label for="name" class="block">Full Name</label>
-                <input type="text" id="name" class="bg-black" placeholder="Jim Carrey">
+                <div class="relative">
+                    <div class="absolute">
+                        <span class="material-symbols-outlined pl-2">
+                            person
+                        </span>
+                    </div>
+                    <input type="text" id="name" class="pl-10 w-full" placeholder="Jim Carrey">
+                </div>
             </div>
 
             <div class="phonesection" id="phone-section">
                 <label for="phone" class="block">Phone Number</label>
-                <input type="text" id="phone" class="bg-black" placeholder="xxxxxxxxxx">
+                <div class="relative">
+                    <div class="absolute">
+                        <span class="material-symbols-outlined pl-2">
+                            call
+                        </span>
+                    </div>
+                    <input type="text" id="phone" class="w-full pl-10" placeholder="xxxxxxxxxx">
+                </div>
             </div>
 
             <div class="emailsection" id="email-section">
                 <label for="email" class="block">Email</label>
-                <input type="text" id="email" class="bg-black" placeholder="xyz@gmail.com">
+                <div class="relative">
+                    <div class="absolute">
+                        <span class="material-symbols-outlined pl-2">
+                            contact_mail
+                        </span>
+                    </div>
+                    <input type="text" id="email" class="w-full pl-10" placeholder="xyz@gmail.com">
+                </div>
             </div>
 
             <div class="pass1" id="pass1">
                 <label for="pass1" class="block">Password</label>
-                <input type="text" id="pass1" class="bg-black" placeholder="*********">
+                <div class="relative">
+                    <div class="absolute">
+                        <span class="material-symbols-outlined pl-2">
+                            password
+                        </span>
+                    </div>
+                    <input type="text" id="pass1" class="w-full pl-10" placeholder="*********">
+                </div>
             </div>
 
             <div class="pass2" id="pass2">
                 <label for="pass2" class="block">Confirm Password</label>
-                <input type="text" id="pass2" class="bg-black" placeholder="*********">
+                <div class="relative">
+                    <div class="absolute">
+                        <span class="material-symbols-outlined pl-2">
+                            password
+                        </span>
+                    </div>
+                    <input type="text" id="pass2" class="w-full pl-10" placeholder="*********">
+                </div>
             </div>
         </form>
 
