@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/form.png">
     <link rel="stylesheet" href="/style.css">
     <title>Form Validation</title>
 </head>
-<body>
+<body class="min-h-screen flex justify-center items-center">
+    <div class="whole border border-black" id="whole-container">
+
+        <h2 class="heading text-center" id="heading1">
+            Register Here
+        </h2>
+
+        <form action="">
+            <div class="namesection" id="name-section">
+                <label for="name" class="block">Full Name</label>
+                <input type="text" id="name" class="bg-black" placeholder="Jim Carrey">
+            </div>
+
+            <div class="phonesection" id="phone-section">
+                <label for="phone" class="block">Phone Number</label>
+                <input type="text" id="phone" class="bg-black" placeholder="xxxxxxxxxx">
+            </div>
+
+            <div class="emailsection" id="email-section">
+                <label for="email" class="block">Email</label>
+                <input type="text" id="email" class="bg-black" placeholder="xyz@gmail.com">
+            </div>
+
+            <div class="pass1" id="pass1">
+                <label for="pass1" class="block">Password</label>
+                <input type="text" id="pass1" class="bg-black" placeholder="*********">
+            </div>
+
+            <div class="pass2" id="pass2">
+                <label for="pass2" class="block">Confirm Password</label>
+                <input type="text" id="pass2" class="bg-black" placeholder="*********">
+            </div>
+        </form>
+
+        <div class="text-center">
+            <button type="submit">Register</button>
+        </div>
+
+    </div>
 
     <script src="/script.js"></script>
 </body>
